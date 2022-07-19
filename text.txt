@@ -1,0 +1,42 @@
+Today I have learnt these topics
+How to set a UserName and Password for the NGINX
+[################################################################]
+steps
+#created a password file by using the htpasswd utility, inside the /etc/nginx
+
+#added a username inside the /etc/nginx/.htpasswd
+commands: sudo sh -c "echo 'username:' >> /etc/nginx/.htpasswd"
+          
+#set a password by using the below command
+command: sudo sh -c "openssl passwd -apr1 >> /etc/nginx/.htpasswd"
+
+#you can see a pair of encrypted user and passwd
+
+command : cat /etc/nginx/.htpasswd
+
+#go inside the configurationfile setup authentication in location block
+
+command : sudo nano /etc/nginx/sites-enabled/default
+
+#to turn on the authentication and promt use below Directives
+1.auth_base "area"
+2.auth_base_user_file "path of passwdfile"
+
+#then restart configurationfile
+command: sudo systemctl restart nginx
+
+#once open the ip its promt
+#and also we can protect a specific directory
+
+[#################################################################]
+And also learnt a how to redirects with NGINX
+    1.rewrite
+    2.proxy
+#status codes
+
+301 for permanent redirects
+302  for temparary redirects
+
+#Nginx add_header Directive
+#respone status
+add_header custom-header value;
