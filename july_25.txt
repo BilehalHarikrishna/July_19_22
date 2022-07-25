@@ -1,0 +1,28 @@
+Today I have learnt about these topic 
+#AWS
+cloud computing
+Ec2 service
+Ec2 is integrated into several services
+They are:
+    s3
+    Database
+    Dinamodb
+    EFS
+    RDS
+    Lamda
+Ec2 components
+They are:
+    AMI
+    Instance Type
+    Ebs(Amazon elastic Block storage)
+    Tag
+    Security group instances
+create instance 
+create security group
+    Inbound and Out bound
+    
+Elastic IPs (for reserve a public ip)
+Get System log
+    for booting /debugg
+
+
