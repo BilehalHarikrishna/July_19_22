@@ -1,0 +1,29 @@
+Today I have learnt about these topics
+# Aws provides two features
+#    security groups controls
+            inbounds and out bounds traffic for instance
+#    networks ACLs
+        inbounds and outbounds traffic for subnets
+# Virtual private cloud network
+    subnet
+ # Elastic block storage (EBS)
+    Block based storage
+EBS types
+    General purpose (ssd)
+        *Most work load
+    Provisioned iops
+        *large database
+    Thoughput optimized hd
+        *big data and data warehouses
+    cloud hdd
+        file servers
+    Magetic
+        *backups
+create volume 
+atach volume and detach
+Mounting
+create partition 
+Commands: fdisk path(/dev/xvdf)
+>mount path mountingpath
+>umount mountedpath
+>df -h (file system )
